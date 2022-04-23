@@ -1,0 +1,116 @@
+
+   
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+body::after {
+    content: '';
+    height: 220px;
+    width: 220px;
+    position: absolute;
+    background: url(../img/bg.png) no-repeat;
+    top: 0;
+}
+
+/* navbar */
+nav .logo a {
+    font-size: 48px;
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+}
+
+nav .logo a:hover {
+    color: black;
+}
+
+/* breadcrumb */
+.breadcrumb {
+    margin-top: 25px;
+    margin-left: 128px;
+}
+
+.breadcrumb li a {
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+}
+
+.breadcrumb li.active {
+    color: #AEAEAE;
+}
+
+/* content */
+.content .col {
+    width: 380px;
+    margin: 0 auto;
+}
+.content .card {
+    height: 280px;
+    width: 280px;
+    margin-top: 20px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.content .card .cardfooter {
+    margin-top: 140px;
+    height: 140px;
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 27px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -47.76%, #334756 141.35%);
+}
+
+.content .card .cardfooter h4 {
+    color: white;
+}
+
+.content .card .cardfooter p {
+    color: white;
+}
+/* footer */
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.copyright a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 576px) {
+    body::after {
+        content: '';
+        height: 150px;
+        width: 150px;
+        background-size: contain;
+    }
+
+    /* breadcrumb */
+    .breadcrumb {
+        margin-left: 38px;
+    }
+
+    /* footer */
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}

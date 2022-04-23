@@ -1,0 +1,87 @@
+/* CSS Boleh diganti dan di kreasikan sendiri, tapi lihat juga tag yang ada pada file .php nya (contoh <div class="sidebar" yang ada pada file index.php), selamat mencoba! */
+
+
+/* Start CSS bagian LAYOUT atau kerangka pada index.php utama */
+  body {
+    overflow-x: hidden;
+  }
+
+  #sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  } 
+
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.4475rem 1.25rem;
+    font-size: 1.7rem;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+  }
+
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+
+  .content{
+    padding: 75px 50px 0 310px;
+    text-transform: capitalize;
+  }
+  /* Stop CSS bagian LAYOUT atau kerangka pada index.php utama */
+  
+  /* Start heading1 (h1) cssnya disini */
+  h1{
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#343a40;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+  }
+  /* Stop heading1 (h1) cssnya disini */
+
+  /* Start disini cara ganti warna table */
+  .table-hover thead tr:hover, .table-hover tbody tr:hover td {
+    background-color: #a2adb8;
+  } 
+  .table-striped {
+    background-color: #ffffff;
+  }
+  /* Stop disini cara ganti warna table */
+
+  /* Start ini untuk ganti warna datatables yang menampilkan "Showing 1 to 10 of 10 entries Previous | 1 | Next" atau yang berhubungan dengan datatables */
+  .page-item.active .page-link {
+    background-color:white  !important;
+    border: 1px solid #343a40  ;
+  }
+  .page-link {
+    color: #18191b !important;
+  }
+  /* Stop ini untuk ganti warna datatables yang menampilkan "Showing 1 to 10 of 10 entries Previous | 1 | Next" atau yang berhubungan dengan datatables */
+
+}

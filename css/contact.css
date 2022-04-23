@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body::after {
+    content: '';
+    height: 220px;
+    width: 220px;
+    position: absolute;
+    background: url(img/bg.png) no-repeat;
+    top: 0;
+}
+
+body::before {
+    content: '';
+    height: 220px;
+    width: 220px;
+    position: absolute;
+    background: url(img/bg2.png) no-repeat;
+    right: 0;
+    bottom: 0;
+}
+
+/* navbar */
+nav a {
+    font-size: 48px;
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* content */
+section.content {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.content .judul h3 {
+    font-size: 32px;
+    color: #424242;
+    text-align: center;
+}
+
+section.content .judul p {
+    color: #8A8A8A;
+    text-align: center;
+    font-size: 16px;
+}
+
+section.content .form {
+    background-color: #FDFDFD;
+    padding: 30px 38px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+}
+
+section.content .form label {
+    color: #8A8A8A;
+}
+
+section.content .form input {
+    background-color: transparent;
+    border-radius: 8px;   
+}
+
+section.content .form input:focus {
+    background-color: white;
+    box-shadow: none;
+    border: 1px solid black !important;
+}
+
+section.content .form textarea {
+    background-color: transparent;
+    border-color: #dddddd !important;
+    border-radius: 8px;
+    display: block;
+}
+
+section.content .form textarea:focus {
+    background-color: white;
+    border: 1px solid black !important;
+}
+
+section.content .form button.btn {
+    background-color: #334756;
+    color: white;
+    padding: 8px 30px;
+}
+
+/* footer */
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:676px) {
+    body::after {
+        height: 150px;
+        width: 150px;
+        background-size: contain;
+    }
+    
+    body::before {
+        display: none;
+    }
+
+    /* content */
+
+    section.content {
+        margin-top: 180px;
+    }
+
+    section.content .form textarea {
+        width: 100%;
+    }
+
+    section.content .form button.btn {
+        margin-top: 20px;
+    }
+
+    /* footer */
+    
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    
+}

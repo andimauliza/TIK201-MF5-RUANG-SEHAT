@@ -1,0 +1,16 @@
+admin
+Halaman Home
+Halaman Input
+ - halaman input kamar
+ - halaman input data pasien
+ - halaman input data dokter
+Halaman Data
+ - lihat data pasien
+ - lihat data kamar
+ - lihat data dokter
+
+pasien
+Halaman Home 
+Halaman Kamar
+Halaman Detail Kamar
+

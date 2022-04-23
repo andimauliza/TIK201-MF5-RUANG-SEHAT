@@ -16,7 +16,7 @@ body::after {
     height: 220px;
     width: 220px;
     position: absolute;
-    background: url(img/bg.png) no-repeat;
+    background: url(../img/bg.png) no-repeat;
     top: 0;
 }
 
@@ -92,6 +92,12 @@ nav .logo a:hover {
     align-items: center;
     justify-content: space-around;
     margin-top: 20px;
+}
+
+.copyright a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width: 576px) {

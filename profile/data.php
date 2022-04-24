@@ -18,6 +18,6 @@ $sql = "UPDATE tb_user SET
 
 $conn->query($sql);
 
-header("Location:index.php?page=pasien/index.php");
+header("Location:index.php?page=user/index.php");
 ?>
 

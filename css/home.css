@@ -57,6 +57,9 @@ section.content h1 {
     line-height: 87px;
 }
 
+section.content h1 span {
+    color: #4ECB80;
+}
 section.content a {
     font-weight: 300;
     font-size: 28px;

@@ -24,7 +24,7 @@
     <!-- content -->
     <section class="content">
         <div class="narasi">
-            <h1>Hi, Patient <br> Welcome To Ruang Sehat</h1>
+            <h1>Hi, <span class="auto-type"></span> <br> Welcome To Ruang Sehat</h1>
             <a href="rooms.html">Check Room Available</a>
         </div>
     </section>
@@ -38,5 +38,15 @@
         </div>
     </footer>
     <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed(".auto-type", {
+            strings: ["Patient", "People", "Users"],
+            typeSpeed: 130,
+            backSpeed: 130,
+            loop: true
+        })
+    </script>
 </body>
 </html>

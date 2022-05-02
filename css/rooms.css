@@ -52,23 +52,22 @@ nav .logo a:hover {
 .content .col {
     width: 380px;
     margin: 0 auto;
+    /* border: 2px solid; */
 }
 .content .card {
-    height: 280px;
-    width: 280px;
+    width: 320px;
     margin-top: 20px;
-    position: relative;
     margin: 20px auto;
 }
 
 .content .card .cardfooter {
-    margin-top: 140px;
-    height: 140px;
+    /* margin-top: 140px; */
+    height: 100%;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 220px;
     padding-left: 27px;
     position: absolute;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -47.76%, #334756 141.35%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(51, 71, 86, 0.5) 103.03%);
 }
 
 .content .card .cardfooter h4 {

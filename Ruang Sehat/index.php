@@ -21,7 +21,7 @@
            position: absolute;
            width: 100px;
            height: 100px;
-           background: url(union.png) no-repeat;
+           background: url(css/union.png) no-repeat;
            background-size: contain;
            bottom: 0;
        }

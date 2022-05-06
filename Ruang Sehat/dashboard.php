@@ -43,7 +43,7 @@
         <ul class="navbar-nav sidebar">
             <!-- profile -->
             <div class="sidebar-card mt-4">
-                <img src="img/profile.png" alt="...">
+                <img src="img/default.png" alt="...">
                 <p class="text-center mb-2">Admin</p>
             </div>
 
@@ -80,7 +80,7 @@
                 <a class="nav-link" href="dashboard.php?page=profile/profile.php"> <img src="img/pasien.png"><span>Profile</span></a>
             </li>
             <!-- Nav Item - Logout -->
-            <li class="nav-item mt-3">
+            <li class="logout mt-3">
                 <a class="nav-link" href="#" ><form action="logout.php" method="POST"><button class="btn btn-danger" type="submit" name="logout"> <img src="img/logout.png"><span>Logout</span></button></form></a>
             </li>
           
@@ -89,12 +89,25 @@
 
         <div class="content">
             <div class="container-fluid">
-            <!--Start ini fungsi pemanggilan file dalam folder-->
-             <?php include("views/" . $_GET['page']); ?>
-            <!--Stop ini fungsi pemanggilan file dalam folder-->
+                <!--Start ini fungsi pemanggilan file dalam folder-->
+                <?php include("views/" . $_GET['page']); ?>
+                <!--Stop ini fungsi pemanggilan file dalam folder-->
             </div>
         </div>
     </div>
 
+
+
+<script>
+    // menambahkan class hovered ketika diklik
+    let list = document.querySelectorAll('li.nav-item');
+    function activeLink(){
+        list.forEach((item) =>
+        item.classList.remove('hovered'));
+        this.classList.add('hovered');
+    }
+    list.forEach((item) =>
+    item.addEventListener('mouseover',activeLink));
+</script>
 </body>
 </html>

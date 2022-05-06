@@ -70,3 +70,34 @@ ul.sidebar .sidebar-heading {
     margin-left: 75px;
     margin-top: 40px;
 }
+
+.card {
+    width: 275px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 35px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 100px 30px 0 20px;
+    background-color: #082032;
+    background-position: center;
+    background-size: cover;
+}
+
+.card h5 {
+    color: white;
+    font-size: 24px;
+}
+
+.card .isi {
+    display: flex;
+    color: white;
+    margin-top: 50px;
+}
+
+.card .isi h3 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-right: 60px;
+}

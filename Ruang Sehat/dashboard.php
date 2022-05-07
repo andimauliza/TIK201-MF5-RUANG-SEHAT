@@ -36,6 +36,122 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="dashboard.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <style type="text/css">
+        * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                body {
+                    background-color: #082032;
+                }
+
+                .wrapper {
+                    display: flex;
+                }
+                ul.sidebar {
+                    background-color: #082032;
+                    padding-bottom: 40px;
+                }
+
+                ul .sidebar-card {
+                    background-color: #334756;
+                    width: 268px;
+                    height: 300px;
+                    margin-left: 36px;
+                    margin-right: 36px;
+                    border-radius: 48px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                ul .sidebar-card p {
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: white;
+                    margin-top: 22px;
+                }
+
+                ul li.nav-item, li.logout {
+                    margin-left: 36px;
+                }
+
+                ul li.nav-item:hover, ul li.nav-item.hovered {
+                    background-color: white;
+                    border-radius: 20px 0 0 20px;
+                }
+
+                ul li.nav-item:hover a.nav-link, ul li.nav-item.hovered a.nav-link {
+                    color: #334756;
+                    position: relative;
+                }
+
+                ul li.nav-item:hover a.nav-link::before, ul li.nav-item.hovered a.nav-link::before {
+                    content: '';
+                    position: absolute;
+                    background-color: transparent;
+                    width: 50px;
+                    height: 50px;
+                    top: -50px;
+                    right: 0;
+                    border-radius: 50%;
+                    box-shadow: 35px 35px 0 10px white;
+                    pointer-events: none;
+                }
+
+                ul li.nav-item:hover a.nav-link::after, ul li.nav-item.hovered a.nav-link::after {
+                    content: '';
+                    position: absolute;
+                    background-color: transparent;
+                    width: 50px;
+                    height: 50px;
+                    bottom: -50px;
+                    right: 0;
+                    border-radius: 50%;
+                    box-shadow: 35px -35px 0 10px white;
+                    pointer-events: none;
+                }
+
+                ul li a.nav-link {
+                    font-weight: 600;
+                    color: white;
+                }
+
+                ul li a.nav-link span {
+                    margin-left: 26px;
+                    font-size: 18px;
+                }
+
+                ul li a.nav-link:hover, ul li a.nav-link.hovered{
+                    color: white;
+                }
+
+                ul li a.nav-link img {
+                    width: 18px;
+                    margin-left: 10px;
+                }
+
+                ul.sidebar .sidebar-heading {
+                    margin-left: 36px;
+                    color: rgb(214, 214, 214);
+                }
+
+                /* content */
+                .content {
+                    width: 100%;
+                    margin: 24px 24px 24px 0;
+                    background-color: white;
+                    border-radius: 48px;
+                }
+
+                .content h1 {
+                    margin-left: 0px;
+                    margin-top: 0px;
+                }
+
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -69,7 +185,12 @@
             </li>
             <!-- Nav Item - Lihat data kamar -->
             <li class="nav-item">
-                <a class="nav-link" href="#"> <img src="img/kamar.png"><span>Lihat Data Kamar</span></a>
+                <a class="nav-link" href="dashboard.php?page=kamar/index.php"> <img src="img/kamar.png"><span>Lihat Data Kamar</span></a>
+            </li>
+
+            <!-- Nav Item - Lihat data kamar pakai -->
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.php?page=kamarpakai/index.php"> <img src="img/kamar.png"><span>Lihat Data Kamar</span></a>
             </li>
 
             <!-- Divider -->
@@ -77,7 +198,7 @@
 
             <!-- Nav Item - Profile -->
             <li class="nav-item">
-                <a class="nav-link" href="dashboard.php?page=profile/profile.php"> <img src="img/pasien.png"><span>Profile</span></a>
+                <a class="nav-link" href="dashboard.php?page=profile/index.php"> <img src="img/pasien.png"><span>Profile</span></a>
             </li>
             <!-- Nav Item - Logout -->
             <li class="logout mt-3">

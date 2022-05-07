@@ -14,7 +14,6 @@
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-
    <style>
        body::after {
            content: '';
@@ -57,7 +56,7 @@
                                         <input type="submit" name="login" class="btn" style="background-color: #334756;width: 100px;color: white;" value="Login">
                                     </div>
                                     <hr />
-                                    Login as Visitor ? <a href="home.html" style="text-decoration: none;">click here </a> 
+                                    Login as Visitor ? <a href="user/home.html" style="text-decoration: none;">click here </a> 
                                     </form>
                             </div>
                            

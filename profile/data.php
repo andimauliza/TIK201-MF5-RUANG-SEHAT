@@ -1,5 +1,3 @@
-<!--Sesuaikan dengan isi field pada table yang digunakan-->
-
 <?php
 
 $id_user                = $_POST['id_user'];
@@ -14,7 +12,6 @@ $sql = "UPDATE tb_user SET
         id_user='$id_user', nip='$nip', nama='$nama', username='$username', email='$email', password='$password', picture='$picture'
         WHERE id_user ='$id_user'
         ";
-
 
 $conn->query($sql);
 

@@ -48,7 +48,7 @@ $result = $conn->query($sql);
         <div class="row">
             <?php foreach( $result as $row ) : ?>
                 <div class="col col-sm-12 col-md-4">
-                    <a href="detailroom.html">
+                    <a href="detailroom.php?id_kamar=<?= $row['id_kamar']; ?>">
                         <div class="card">
                             <img src="img/<?= $row['image_kamar'] ?>" alt="Kamar Inap">
                             <div class="cardfooter">
@@ -67,7 +67,7 @@ $result = $conn->query($sql);
     <footer>
         <div class="copyright">
             <p>Copyright 2022 | All Right Reserved</p>
-            <p><a href="contact.html">Call: </a>08972886253</p>
+            <p><a href="contact.html" style="text-decoration:underline">Contact: </a>08972886253</p>
         </div>
     </footer>
     <!-- end footer -->

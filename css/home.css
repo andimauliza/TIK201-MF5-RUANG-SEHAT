@@ -46,23 +46,22 @@ nav a:hover {
 section.content {
     height: 70vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 section.content h1 {
     font-weight: 800;
-    font-size: 64px;
-    line-height: 87px;
+    font-size: 46px;
+    line-height: 67px;
 }
 
 section.content h1 span {
-    color: #4ECB80;
+    color: #FFA8B1;
 }
 section.content a {
     font-weight: 300;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 38px;
     letter-spacing: 0.06em;
     color: black;
@@ -76,6 +75,10 @@ section.content a::after {
     background: url(../img/arrow.png) no-repeat;
     margin-left: 20px;
     margin-top: 15px;
+}
+
+section.content .image img {
+    width: 500px;
 }
 
 /* footer */

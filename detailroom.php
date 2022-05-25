@@ -105,7 +105,7 @@ $rows                = $result_tb_ruangan->fetch_array();
     <footer>
         <div class="copyright">
             <p>Copyright 2022 | All Right Reserved</p>
-            <p><a href="contact.html">Call: </a>08972886253</p>
+            <p><a href="contact.html" style="text-decoration:underline">Contact: </a>08972886253</p>
         </div>
     </footer>
     <!-- end footer -->

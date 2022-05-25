@@ -29,20 +29,20 @@
         </div>
 
         <div class="form">
-            <form action="">
+            <form action="send.php" method="post" target="_blank">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" name="name" class="form-control" id="name">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" name="email" class="form-control" id="email">
                         </div>
                         <div class="mb-3">
                             <label for="subject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="subject">
+                            <input type="text" class="form-control" id="subject" name="subject">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -51,8 +51,11 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
+                            <input type="hidden" name="noWa" value="628972886253">
+                        </div>
+                        <div class="col-md-12">
                             <button type="submit" class="btn">Send Message</button>
-                    </div>
+                        </div>
                     </div>
                     
                 </div>
@@ -65,7 +68,7 @@
     <footer>
         <div class="copyright">
             <p>Copyright 2022 | All Right Reserved</p>
-            <p><a href="contact.html">Call: </a>08972886253</p>
+            <p><a href="contact.html" style="text-decoration:underline">Contact: </a>08972886253</p>
         </div>
     </footer>
     <!-- end footer -->
